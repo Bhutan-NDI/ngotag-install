@@ -911,7 +911,7 @@ setup_keycloak_terraform() {
     }
     
     print_message "yellow" "Waiting few seconds for Keycloak to be fully ready..."
-    sleep 40
+    sleep 80
     
     terraform apply -auto-approve || {
         print_message "red" "Terraform apply failed"
